@@ -3,12 +3,12 @@ import Calculator from './components/Calculator';
 import Advertisement from './components/Advertisement';
 
 const companyName1: string = 'ABC Corporation';
-const productDescription1 = 'Great Product!';
-const price1 = '$19.99';
+const productDescription1: string = 'Great Product!';
+const price1: string = '$19.99';
 
 const companyName2: string = 'XYZ Corporation';
-const productDescription2 = 'Amazing Product!';
-const price2 = '$49.99';
+const productDescription2: string = 'Amazing Product!';
+const price2: string = '$49.99';
 
 function App() {
 
