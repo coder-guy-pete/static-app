@@ -10,16 +10,16 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Install dependencies
-        command: npm install
+          name: Install dependencies
+          command: npm install
       - run:
-        name: Build the app
-        command: npm run build
+          name: Build the app
+          command: npm run build
 
 workflows:
   run-tests:
     jobs:
       - start-server
       - cypress/run:
-        name: run-component-tests
-        cypress-command: npx cupress run --component
+          name: run-component-tests
+          cypress-command: npx cupress run --component
