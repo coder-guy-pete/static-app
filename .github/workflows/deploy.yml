@@ -25,6 +25,8 @@ jobs:
         # Run install and test scripts
         run: |
             npm install
+            npm run build
+            npm run start
             npm run test
 
       # Define a step named "Deploy"
