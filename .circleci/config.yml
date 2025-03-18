@@ -9,12 +9,11 @@ jobs:
       - image: cypress/base:latest
     steps:
       - checkout
-      - run:
-          name: Install dependencies
-          command: npm install
-      - run:
-          name: Build the app
-          command: npm run build
+      - name: Install dependencies
+        run: |
+          npm install
+          npm run build
+          npm run start
   deploy-to-render-staging:
     docker:
       - image: cimg/base:current
