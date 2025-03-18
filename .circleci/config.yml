@@ -15,6 +15,9 @@ jobs:
       - run:
           name: Build the app
           command: npm run build
+      - run:
+          name: Start the server
+          command: npm run start
   deploy-to-render-staging:
     docker:
       - image: cimg/base:current
