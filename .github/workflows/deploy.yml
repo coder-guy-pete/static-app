@@ -9,6 +9,9 @@ on:
     branches:
       - main
 
+env:
+  MONGODB_URI: ${{ secrets.MONGODB_URI }}
+
 jobs:
   # Define a job named "ci"
   ci:
